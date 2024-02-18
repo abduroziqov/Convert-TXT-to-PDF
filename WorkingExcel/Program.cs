@@ -10,48 +10,6 @@ namespace WorkingExcel
 
         static void Main(string[] args)
         {
-            /*string excelFilePath = @"C:\Users\abdur\OneDrive\Рабочий стол\excel.xlsx";
-            string pdfFilePath = @"C:\Users\abdur\OneDrive\Рабочий стол\pdf.pdf";
-
-
-            // Create an instance of Excel Application
-            Excel.Application excelApp = new Excel.Application();
-            excelApp.Visible = false; // Don't show Excel window
-
-            // Open Excel workbook
-            Excel.Workbook workbook = excelApp.Workbooks.Open(excelFilePath);
-
-            // Save the workbook as PDF
-            workbook.ExportAsFixedFormat(Excel.XlFixedFormatType.xlTypePDF, pdfFilePath);
-
-            // Close Excel workbook and quit Excel application
-            workbook.Close();
-            excelApp.Quit();
-
-            // Release COM objects
-            ReleaseObject(workbook);
-            ReleaseObject(excelApp);
-
-            Console.WriteLine("Conversion completed successfully.");
-        }
-
-        private static void ReleaseObject(object obj)
-        {
-            try
-            {
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(obj);
-                obj = null;
-            }
-            catch (Exception ex)
-            {
-                obj = null;
-                Console.WriteLine("Exception Occured while releasing object " + ex.ToString());
-            }
-            finally
-            {
-                GC.Collect();
-            }*/
-
             Console.WriteLine("Welcome to converter : ");
             TXTtoPDf();
         }
